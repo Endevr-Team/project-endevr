@@ -1,0 +1,8 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+
+@use 'reset';
+
+:root {
+	// Set 1rem to be 16px
+	font-size: 16px;
+}
