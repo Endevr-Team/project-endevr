@@ -1,27 +1,26 @@
 <script>
-    // nothing for now
+  // nothing for now
 </script>
 
 <section>
-    <h1>Endevr</h1>
-    <button class="button about-button">About</button>
-    <button class="button join-button">Join</button>
+  <h1>Endevr</h1>
+  <button class="button about-button">About</button>
+  <button class="button join-button">Join</button>
 </section>
-
 
 <style lang="scss">
   section {
     display: flex;
     margin: 2rem;
-    }
+  }
 
-  h1{
+  h1 {
     font-size: 3rem;
-    font-family: "SF Pro";
+    font-family: 'SF Pro';
     flex: 1;
   }
 
-  .button{
+  .button {
     border: none;
     color: white;
     padding: 0.1rem 3rem;
@@ -29,15 +28,14 @@
     font-size: 16px;
     margin: 1rem 0.2rem;
     cursor: pointer;
-    font-family: "SF Pro";
+    font-family: 'SF Pro';
   }
 
-  .about-button{
+  .about-button {
     background-color: black;
   }
 
-  .join-button{
+  .join-button {
     background-color: red;
   }
 </style>
-
