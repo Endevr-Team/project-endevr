@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ListingCard from '$lib/ListingCard.svelte';
+	import Header from '../lib/components/Header.svelte';
 
 	const cards = [
 		{
@@ -21,8 +22,13 @@
 	];
 </script>
 
-<h1>Endevr</h1>
+
+<Header/>
 
 {#each cards as card (card.id)}
 	<ListingCard {...card} />
 {/each}
+
+
+
+
