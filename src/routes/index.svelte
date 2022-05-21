@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ListingCard from '$lib/ListingCard.svelte';
-	import Header from '$lib/Header.svelte';
+	import Header from '../lib/components/Header.svelte';
 
 	const cards = [
 		{
