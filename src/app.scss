@@ -1,10 +1,13 @@
 /* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
 
 @use 'reset';
+@use 'sass:color';
 
 :root {
   // Set 1rem to be 16px
   font-size: 16px;
 
   font-family: Kanit, Arial, Helvetica, sans-serif;
+
+  --secondary-text-color: #{color.scale(black, $lightness: 20%)};
 }
