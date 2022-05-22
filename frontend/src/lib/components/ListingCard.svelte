@@ -46,6 +46,7 @@
       color: var(--secondary-text-color);
     }
   }
+
   .card-info {
     display: flex;
     flex-direction: row;
