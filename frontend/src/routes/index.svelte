@@ -31,15 +31,58 @@
       image:
         'https://c.gitcoin.co/grants/efa9d89ad3b641b2485536b6d4d710c3/130274396-5b016393-d6f2-4eba-9660-92a2983c8dd5.jpeg',
       pioneer: dummyPioneer
+    },
+    {
+      id: 3,
+      title: 'Using ZK for game optimization in Dark Forest',
+      mission:
+              'We believe everyone Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas sit turpis vel a.',
+      image:
+              'https://c.gitcoin.co/grants/efa9d89ad3b641b2485536b6d4d710c3/130274396-5b016393-d6f2-4eba-9660-92a2983c8dd5.jpeg',
+      pioneer: dummyPioneer
+    },
+    {
+      id: 4,
+      title: 'Using ZK for game optimization in Dark Forest',
+      mission:
+              'We believe everyone Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas sit turpis vel a.',
+      image:
+              'https://c.gitcoin.co/grants/efa9d89ad3b641b2485536b6d4d710c3/130274396-5b016393-d6f2-4eba-9660-92a2983c8dd5.jpeg',
+      pioneer: dummyPioneer
     }
   ];
 </script>
 
 <Header/>
-<Sidebar/>
+<div class="content-homepage">
+  <Sidebar/>
+  <div class = "card-listing">
+    <div class="grid-container">
+      {#each cards as card (card.id)}
+        <ListingCard {...card} />
+      {/each}
+    </div>
+  </div>
+</div>
 
-{#each cards as card (card.id)}
-  <ListingCard {...card} />
-{/each}
 
 <Footer/>
+
+<style>
+
+  .content-homepage{
+    display: flex;
+  }
+
+  .card-listing{
+    display: flex;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+
+  }
+</style>
+

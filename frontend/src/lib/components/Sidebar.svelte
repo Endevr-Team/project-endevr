@@ -19,7 +19,7 @@
         display: flex;
         flex-direction: column;
         width: 10rem;
-        height: 40rem;
+        height: 20rem;
         align-items: flex-start;
         margin: 1rem;
         padding: 1rem;

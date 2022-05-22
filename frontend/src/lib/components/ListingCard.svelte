@@ -8,7 +8,6 @@
   export let pioneer: Pioneer;
 </script>
 
-/* TODO: make this container into a Paper component */
 <section class="paper paper">
   <img class="header" src={image} alt={title} />
   <h3>{title}</h3>
