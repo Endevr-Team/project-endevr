@@ -3,6 +3,7 @@
   import ListingCard from '$lib/components/ListingCard.svelte';
   import type { Pioneer } from '$lib/session';
   import Sidebar from "../lib/components/Sidebar.svelte";
+  import Footer from "../lib/components/Footer.svelte";
 
   const dummyPioneer: Pioneer = {
     id: 'lkjkjlkad',
@@ -40,3 +41,5 @@
 {#each cards as card (card.id)}
   <ListingCard {...card} />
 {/each}
+
+<Footer/>
