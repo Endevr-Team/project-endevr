@@ -4,7 +4,6 @@
   export let image: string;
 </script>
 
-/* TODO: make this container into a Paper component */
 <section>
   <img class="header-img" src={image} alt={title} />
   <h4>{title}</h4>
