@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ListingCard from '$lib/components/ListingCard.svelte';
 	import Header from '../lib/components/Header.svelte';
+	import Sidebar from "../lib/components/Sidebar.svelte";
 
 	const cards = [
 		{
@@ -22,8 +23,8 @@
 	];
 </script>
 
-
 <Header/>
+<Sidebar/>
 
 {#each cards as card (card.id)}
 	<ListingCard {...card} />

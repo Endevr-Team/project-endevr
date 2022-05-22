@@ -4,6 +4,7 @@
   export let image: string;
 </script>
 
+
 <section>
   <img class="header-img" src={image} alt={title} />
   <h4>{title}</h4>
