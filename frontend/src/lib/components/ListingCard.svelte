@@ -46,25 +46,31 @@
       color: var(--secondary-text-color);
     }
   }
+
   .card-info {
     display: flex;
     flex-direction: row;
     color: var(--secondary-text-color);
+
     .name {
       margin-top: 0.75rem;
-    width: calc(28rem);
-    height: calc(20rem);
-    overflow: hidden;
+      width: calc(28rem);
+      height: calc(20rem);
+      overflow: hidden;
+    }
 
-    .header-img {
-      height: 60%;
-      object-fit: cover;
-    }
-    :not(.header-img) {
-      margin: 0 0.5rem;
-    }
-    * {
-      margin-bottom: 0.5rem;
-    }
+      .header-img {
+        height: 60%;
+        object-fit: cover;
+      }
+
+      :not(.header-img) {
+        margin: 0 0.5rem;
+      }
+
+      * {
+        margin-bottom: 0.5rem;
+      }
   }
+
 </style>
