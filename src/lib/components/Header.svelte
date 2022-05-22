@@ -16,7 +16,6 @@
 
   h1 {
     font-size: 3rem;
-    font-family: 'SF Pro';
     flex: 1;
   }
 
@@ -28,7 +27,6 @@
     font-size: 16px;
     margin: 1rem 0.2rem;
     cursor: pointer;
-    font-family: 'SF Pro';
   }
 
   .about-button {

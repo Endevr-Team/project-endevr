@@ -2,6 +2,9 @@
   import Header from '../lib/components/Header.svelte';
   import ListingCard from '$lib/components/ListingCard.svelte';
   import type { Pioneer } from '$lib/session';
+	import ListingCard from '$lib/components/ListingCard.svelte';
+	import Header from '../lib/components/Header.svelte';
+	import Sidebar from "../lib/components/Sidebar.svelte";
 
   const dummyPioneer: Pioneer = {
     id: 'lkjkjlkad',
@@ -33,7 +36,8 @@
   ];
 </script>
 
-<Header />
+<Header/>
+<Sidebar/>
 
 {#each cards as card (card.id)}
   <ListingCard {...card} />
