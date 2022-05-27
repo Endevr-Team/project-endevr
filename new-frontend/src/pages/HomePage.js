@@ -1,9 +1,13 @@
 import NavBar from '../components/NavBar';
+import ProjectCard from '../components/ProjectCard';
 
 
 function HomePage() {
     return(
-        <NavBar/>
+        <div>
+            <NavBar/>
+            <ProjectCard/>
+        </div>
     )
 }
 
