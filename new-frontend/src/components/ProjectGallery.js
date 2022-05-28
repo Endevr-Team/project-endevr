@@ -27,7 +27,7 @@ function ProjectGallery() {
                     (
                         data.map((endeavour, index) =>
                             // Only do this if items have no stable IDs
-                            <ProjectCard key={index} name={endeavour.get("name")} description={endeavour.get("description")} />
+                            <ProjectCard key={index} name={endeavour.get("name")} description={endeavour.get("description")} id={endeavour.id} />
                         )
                     )
 
