@@ -33,9 +33,18 @@ function ProjectPage () {
 
 
                     <h1 className="text-5xl font-bold text-slate-600 pb-2 mt-4"> Goal </h1>
-                    {testData.map((item, idx) => (
-                        <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
-                    ))}
+
+
+                    <div className="flex flex-row">
+                        {testData.map((item, idx) => (
+                            <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+                        ))}
+
+                        <button className="h-12 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+                            Become a Contributor
+                        </button>
+                    </div>
+
                     <p className="text-xl text-slate-600">
                         Neural Rad is a web application that allows users to create and share neural networks.
                         Users can then use the neural network to predict the outcome of a given set of inputs.
