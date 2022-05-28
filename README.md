@@ -1,6 +1,6 @@
 ![wallpaper](https://user-images.githubusercontent.com/65676392/170804066-40764783-0419-4c8d-bc0a-0dde614e7be5.png)
 
-## Inspiration![Uploading wall paper.png…]()
+## Inspiration
 
 
 "Programmer fought cancer with 50 Nvidia Geforce 1080Ti"
