@@ -1,3 +1,4 @@
+import React from 'react'
 import NavBar from '../components/NavBar';
 import ProjectCard from '../components/ProjectCard';
 import LandingSlide from '../components/LandingSlide';
