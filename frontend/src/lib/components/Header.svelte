@@ -36,4 +36,5 @@
   .join-button {
     background-color: red;
   }
+
 </style>
