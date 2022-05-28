@@ -1,5 +1,5 @@
 import "./landingpage.css";
-
+import React from 'react'
 
 function LandingSlide() {
 
@@ -17,7 +17,7 @@ function LandingSlide() {
 
 
 
-)
+    )
 }
 
 

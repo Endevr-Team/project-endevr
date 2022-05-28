@@ -1,10 +1,28 @@
+import React from 'react'
+import { useMoralis } from "react-moralis";
+
+import fullLogo from "../images/logo-full.png"
 
 function NavBar() {
-    return(
-        <div class="flex m-4 h-12">
-            <h1 class="text-3xl">Endevr</h1>
-            <button class="justify-end mx-2 px-5 bg-black text-white"> About </button>
-            <button class="justify-end mx-2 px-5 bg-red-500 text-white"> Join </button>
+
+    const { authenticate, logout, isAuthenticated, user, isAuthenticating } = useMoralis();
+    console.log(user);
+
+    return (
+        <div className="flex my-4 mx-10 h-12 justify-between">
+            <img className="py-1" src={fullLogo} />
+            <div className="">
+                {isAuthenticated ?
+                    <button className="h-12 py-2 px-4 bg-transparent text-black font-semibold border border-black rounded hover:bg-black hover:text-white hover:border-transparent transition ease-in duration-200 transform w-44 text-ellipsis overflow-hidden"
+                        onClick={() => logout()}
+                        disabled={isAuthenticating}
+                    > {user.get("ethAddress")} </button> :
+                    <button className="h-12 py-2 px-4 bg-transparent text-black font-semibold border border-black rounded hover:bg-black hover:text-white hover:border-transparent transition ease-in duration-200 transform w-36"
+                        onClick={() => authenticate({ signingMessage: "Connect to Endevr to donate to projects" })}
+                        disabled={isAuthenticating}
+                    > Connect </button>
+                }
+            </div >
         </div>
     )
 }
